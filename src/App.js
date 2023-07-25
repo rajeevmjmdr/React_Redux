@@ -1,12 +1,12 @@
 import { Container } from "react-bootstrap";
 import "./App.css";
 
-import Counter from "./features/counter/Counter";
+import Account from "./features/Account/Account";
 
 function App() {
   return (
     <Container>
-      <Counter></Counter>;
+      <Account></Account>
     </Container>
   );
 }
