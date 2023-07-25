@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment, incrementByAmt } from "./counterSlice";
-import "./Counter.css";
+import { decrement, increment, incrementByAmt } from "./accountSlice";
+import "./Account.css";
 import { useState } from "react";
 
-const Counter = () => {
-  const count = useSelector((state) => state.counter.value);
+const Account = () => {
+  const amount = useSelector((state) => state.account.amount);
   const dispatch = useDispatch();
   const [value = 0, setValue] = useState();
   const inputChangeHandler = (event) => {
@@ -12,7 +12,9 @@ const Counter = () => {
     setValue(parseInt(event.target.value));
   };
   return (
-    <div className="counter_position">
+    <div className="position">
+      <h1 className="text-center">Account</h1>
+      <div className="text-center">Amount: {amount}</div>
       <div className="d-flex align-items-center justify-content-center">
         <button
           className="btn btn-primary"
@@ -21,7 +23,7 @@ const Counter = () => {
         >
           +
         </button>
-        <span className="value">{count}</span>
+        <span className="value"></span>
         <button
           className="btn btn-primary"
           aria-label="Decrement value"
@@ -43,7 +45,8 @@ const Counter = () => {
           IncrementBY Amount
         </button>
       </div>
+      <hr className="solid"></hr>
     </div>
   );
 };
-export default Counter;
+export default Account;

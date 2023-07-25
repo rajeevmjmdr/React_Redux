@@ -1,8 +1,12 @@
-.counter_position{
+div.position{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.value{
+span.value{
     padding-left: 10px;
     padding-right: 10px;
 }
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
