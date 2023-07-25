@@ -1,0 +1,9 @@
+div.position{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
