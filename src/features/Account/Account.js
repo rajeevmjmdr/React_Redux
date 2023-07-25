@@ -21,7 +21,7 @@ const Account = () => {
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
-          +
+          Increment +
         </button>
         <span className="value"></span>
         <button
@@ -29,7 +29,7 @@ const Account = () => {
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
-          -
+         Decrement -
         </button>
         <span className="value"></span>
         <input

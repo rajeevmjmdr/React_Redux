@@ -16,7 +16,7 @@ const Bonus = () => {
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
-          Increment
+          Increment +
          </button>
     
       </div>
