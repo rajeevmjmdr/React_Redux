@@ -12,7 +12,7 @@ const Bonus = () => {
       <div className="text-center">Bonus Point: {point}</div>
       <div className="d-flex align-items-center justify-content-center">
         <button
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >

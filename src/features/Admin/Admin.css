@@ -1,0 +1,12 @@
+div.position{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+span.value{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
