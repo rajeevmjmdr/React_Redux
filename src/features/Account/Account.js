@@ -17,7 +17,7 @@ const Account = () => {
       <div className="text-center">Amount: {amount}</div>
       <div className="d-flex align-items-center justify-content-center">
         <button
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
@@ -25,7 +25,7 @@ const Account = () => {
         </button>
         <span className="value"></span>
         <button
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
@@ -38,14 +38,15 @@ const Account = () => {
           placeholder="Enter value "
         ></input>
         <button
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
           aria-label="Increment By Amount"
           onClick={() => dispatch(incrementByAmt(value))}
         >
           IncrementBY Amount
         </button>
+        <span className="value"></span>
         <button
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
           aria-label="getUserAccount"
           onClick={() => dispatch(getUserAccount(1))}
         >

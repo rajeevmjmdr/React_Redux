@@ -12,7 +12,7 @@ const Reward = () => {
       <div className="text-center">Reward Point: {point}</div>
       <div className="d-flex align-items-center justify-content-center">
         <button
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
@@ -20,7 +20,7 @@ const Reward = () => {
          </button>
          <span className="value"></span>
          <button
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
           aria-label="Increment value by Amt"
           onClick={() => dispatch(incrementBYAmt(10))}
         >
