@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment, incrementByAmt } from "./accountSlice";
+import { decrement, increment, incrementByAmt,getUserAccount } from "./accountSlice";
 import "./Account.css";
 import { useState } from "react";
 
@@ -43,6 +43,13 @@ const Account = () => {
           onClick={() => dispatch(incrementByAmt(value))}
         >
           IncrementBY Amount
+        </button>
+        <button
+          className="btn btn-primary"
+          aria-label="getUserAccount"
+          onClick={() => dispatch(getUserAccount(1))}
+        >
+          Get USer
         </button>
       </div>
       <hr className="solid"></hr>
